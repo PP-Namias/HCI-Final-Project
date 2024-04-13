@@ -1,0 +1,155 @@
+.container1 {
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.articles {
+    height: auto;
+    margin: auto;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    background-size: fixed;
+    background-repeat: no-repeat;
+}
+
+
+nav {
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    z-index: 2;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+  }
+
+ul {
+    padding: 0;
+    margin: 0 0 0 505px;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+li {
+    float: right;
+    justify-content: center;
+}
+
+.logo img {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 60px;
+    width: 102px;
+    left: 150px;
+    justify-content: center;
+}
+
+nav a {
+    width: 100px;
+    display: block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: Times New Roman;
+    color: #f2f2f2;
+    text-align: center;
+    justify-content: center;
+}
+
+a:hover {
+    color: #00FFFF;
+}
+
+.link {
+    position: relative;
+    padding-bottom: 8px;
+    cursor: pointer;
+}
+
+.link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: #00FFFF;
+    transition: width 0.3s ease-out;
+}
+
+.link:hover.link::after {
+    width: 100%;
+}
+
+h1 {
+    position: relative;
+    font-family: arial black;
+    color: #00FFFF;
+    text-align: center;
+    z-index: 5;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.textfade {
+    animation: textfade 5s;
+    z-index: 9;
+    position: relative;
+}
+
+@keyframes textfade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.content1 {
+    padding: 10px auto;
+    color: white;
+    margin-right: 150px;
+    margin-left: 150px;
+} 
+
+.content1 h2 {
+    font-size: 42px;
+    color: white;
+    text-align: center;
+}
+
+.content3 {
+    font-size: 42px;
+    color: cyan;
+    text-align: center;
+}
+
+.content4 {
+    padding: 10px auto;
+    font-size: 20px;
+    color: white;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.content a{
+    text-align: center;
+    color: white;
+    margin-right: 150px;
+    margin-left: 150px;
+}

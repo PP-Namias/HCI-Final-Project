@@ -1,0 +1,9 @@
+Color palettes
+
+cyan: #00FFFF
+white: #f2f2f2
+
+Font family
+
+for title: Arial Black
+for text: plain

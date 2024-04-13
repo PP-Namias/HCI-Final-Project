@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Us</title>
+        <link rel="icon" href="./image/logoT.png" type="image/png"/>
+        <link rel="stylesheet" href="styles/aboutus.css">
+    </head>
+    <body>
+      <div class="container1">
+        <div>
+        <a class="logo"><img class="random" src ="image/logo.png"></a>
+        </div>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <li class= "link"><a href ="hc.html">History of Cycling</a></li>
+                    <li class= "link"><a href ="pb.html">Parts of Bike</a></li>
+                    <li class= "link"><a href ="try.html">Maintenance</a></li>
+                    <li class= "link"><a href ="rb.html">Versions of Bike</a></li>
+                    <li class= "link"><a href ="aboutus.html">About us</a></li>  
+                </ul>
+            </nav>
+        </div>
+              <h1 class="heading"> Our Team</h1>
+              <br>
+              <br>
+              <br>
+              <div class="image-container">
+                  <div class="image" onclick="fetch_info(0)"><img src="image/camique1.png"></div>
+                  <div class="image" onclick="fetch_info(1)"><img src="image/fungo1.png"></div>
+                  <div class="image" onclick="fetch_info(2)"><img src="image/pabua1.png"></div>
+                  <div class="image" onclick="fetch_info(3)"><img src="image/villanueva1.png"></div>
+              </div>
+
+              <div class="info-container">
+                  <img class="profile" id="profile" src="image/aboutsamen.jpg">
+                  <div class="info">
+                        <h1 class="name" id="name">VeloRyders Websystem's</h1>
+                        <h3 class="status" id="status">Greetings!</h3>
+                        <p class="about" id="about">
+                          "Welcome to VeloRyders, the ultimate destination for the cycling community. Our website is dedicated to all things related to cycling, including news, events, reviews, and resources. We aim to create a thriving online community for cyclists of all levels, from beginners to experienced riders. Whether you're looking to improve your cycling skills, connect with other riders, or discover new routes to explore, VeloRyders has everything you need. Join our community today and let's ride together!"
+                        </p>                  
+                  </div>
+              </div>
+              </div>
+              <script>
+                      function fetch_info(i){
+                        let profile = ["image/camique1.png","image/fungo1.png","image/pabua1.png","image/villanueva1.png"];
+                        let name = [
+                          "James Ivan Camique", 
+                          "Gian Higino Fungo", 
+                          "Emmanuel Pabua", 
+                          "Jasper Villanueva"];
+                        let status = [
+                          "BSCS-1A/Programmer",
+                          "BSCS-1A/Programmer",
+                          "BSCS-1A/Programmer",
+                          "BSCS-1A/Programmer"];
+                        let about = [
+                          "Hello! My name is James Ivan B. Camique. I am 20 years old and currently reside in the city of Caloocan. In my free time, I enjoy watching videos on Youtube, particularly those related to technology and gaming. I am also a BSCS (Bachelor of Science in Computer Science) student, which further fuels my passion for all things tech-related. Additionally, I am a proud cat owner and love spending time with my feline friends. I'm doing my best to learn from my course, so that in the future, I have money to support myself, my family, and my cats.",
+                          "Hello, My name is Gian Higino Fungo. I am 19 years ikd and living in the biggest barangay of caloocan which is bagong silang. I am the leader and the captain of the group and i want to lead them into the good way for our future, my hobbies are playing video games and helping my family for daily chores. i am currently studying in UCC in the program of Bachelor or Scirnece and Computer Science, My favorite programming languages are python, and java. ",
+                          "Hi! Emannuel Pabua here you can also call me Emann for short, I'm alive for 19 years now and later on this December 6 will be my 20th. I'm a normal plain guy who loves to explore more and more things I could ever reach. Usually though, I just laze around the house doing nothing but draw, watch, read, play, and listen to different music. For now I've been planning to further improve and expand my current knowledge so that I'll be able to prepare myself to any problem that I encounter in the future.",
+                          "I'm Jasper P. Villanueva, a 19-year-old student living in the lively City of Caloocan. I'm studying for a BSCS (Bachelor of Science in Computer Science). In my spare time, I like to play video games and spend time with my friends and family. I'm always eager to learn and expand my knowledge in the field of computer science."];
+                        document.getElementById("profile").src = profile[i];
+                        document.getElementById("name").innerHTML = name[i];
+                        document.getElementById("status").innerHTML = status[i];
+                        document.getElementById("about").innerHTML = about[i] + 
+                        "" +
+                        "Thank you";
+                      }
+              </script>
+    </body>
+</html>
